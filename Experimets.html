@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Experiments</title>
+        <style type="text/css">           
+            .fa-arrow-down {
+                transform: rotate(-135deg);
+                transition: transform 0.7s linear;
+            }
+
+            .fa-arrow-down.open {
+              transform: rotate(45deg);
+              transition: transform 0.7s linear;
+            }
+            
+            #container, #container1 {
+                width: 100px;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+                background-color: red;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+            }
+            
+            i {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            float: right;
+            margin-top: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Button with rotate arrow -->
+        <div id="container">Click on<i id="icon" class="fa fa-arrow-down"></i></div></br>
+        <div id="container1">Cick on 2<i id="icon1" class="fa fa-arrow-down"></i></div>
+        <script>
+            (function(document){
+              var div = document.getElementById('container');
+              var icon = document.getElementById('icon');
+              var div1 = document.getElementById('container1');
+              var icon1 = document.getElementById('icon1');
+              var open = true;
+              var open1 = true;
+
+              div.addEventListener('click', function(){
+                if(open){
+                  icon.className = 'fa fa-arrow-down open';  
+                } else{
+                  icon.className = 'fa fa-arrow-down';
+                }
+
+                open = !open;
+              });
+                
+             div1.addEventListener('click', function() {
+                 if(open1) {
+                     icon1.className = 'fa fa-arrow-down open';
+                 } else {
+                     icon1.className = 'fa fa-arrow-down';
+                 }
+                 
+                 open1 = !open1;
+             });
+            })(document);
+        </script>
+    </body>
+</html>

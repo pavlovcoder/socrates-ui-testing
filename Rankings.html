@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rankings</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- Bootstrap Include -->
+        <!--<link href="bootstrap.css" rel="stylesheet" media="screen">-->
+        <style type="text/css">
+            
+        .section-1 {
+            width: 100%;
+            height: 2000px;
+            border: solid 2px black;
+            text-align: center;
+            vertical-align: center;
+            font-size: 30pt;
+            font-weight: bold;
+            padding-top: 50%;
+        }
+            a {
+                color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <header class="topnav" id="topnav">
+            <a href="index.html" style="font-weight: bold; width: 366px" id="#Socrates">Socrates</a>
+            <a href="#About" style="margin-left: 35px; width: 139.4px">About</a>
+            <a href="#Help" style="width: 139.4px">Help</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()" style="width: 139.4px" id="button0">Country<i id="icon2" class="fa fa-arrow-down"></i></button>
+                <div class="dropdown-content" id="myDropdown">
+                        <a href="#USA">USA</a>
+                        <a href="#Canada">Canada</a>
+                        <a href="UK">Great Britain</a>
+                        <a href="#Germany">Germany</a>
+                        <a href="#France">France</a>
+                        <a href="#Spain">Spain</a>
+                        <a href="#Italy">Italy</a>
+                        <a href="#Netherland">Netherland</a>
+                        <a href="#Sweden">Sweden</a>
+                        <a href="#Norway">Norway</a>
+                        <a href="#Finland">Finland</a>
+                        <a href="#Estonia">Estonia</a>
+                        <a href="#Lithuania">Lithuania</a>
+                        <a href="#Latvia">Latvia</a>
+                        <a href="#Poland">Poland</a>
+                        <a href="#Hungary">Hungary</a>
+                        <a href="#Russia">Russia</a>
+                        <a href="#Ukraine">Ukraine</a>
+                        <a href="#Belarus">Belarus</a>
+                        <a href="#China">China</a>
+                        <a href="#Japan">Japan</a>
+                        <a href="#Singapore">Singapore</a>
+                        <a href="#Europe">Europe</a>
+                        <a href="#Asia">Asia</a>
+                        <a href="#Africa">Africa</a>
+                        <a href="#MiddleEast">Middle East</a>
+                        <a href="#NorthAmerica">North America</a>
+                        <a href="#SouthAmerica">South America</a>
+                </div>
+                </div>
+            <div class="dropdown1">
+                <button class="dropbtn1" onclick="myFunction1()" style="width: 139.4px" id="button1">Language<i id="icon3" class="fa fa-arrow-down"></i></button>
+                <div class="dropdown-content1" id="myDropdown1">
+                    <a href="#EN">English</a>
+                    <a href="#DE">Deutsch</a>
+                    <a href="#FR">Français</a>
+                    <a href="#SP">Español</a>
+                    <a href="#IT">Italiano</a>
+                    <a href="#PL">Polski</a>
+                    <a href="#CH">中国</a>
+                    <a href="#RU">Русский</a>
+                    <a href="#UA">Українська</a>
+                    <a href="#AR">العربية</a>
+                </div>
+            </div>
+            <span class="Login"><a href="#Login" onclick="document.getElementById('id01').style.display='block'">Log In</a></span>
+            <form>
+                <input type="text" name="search" placeholder="Search.." style="margin-left: 139.4px">
+            </form>
+        </header>
+        
+        <nav>
+            <div class="vertical-menu">
+            <a href="Analysis.html">Analysis</a>
+            <a href="Knowledge.html">Knowledge</a>
+            <a href="Evaluate.html">Evaluate</a>
+            <a href="Compare.html">Compare</a>
+            <a href="Researches.html">Researches</a>
+            <a href="Rankings.html">Rankings</a>
+            <a href="Participate.html">Participate</a>
+            <a href="Notify.html">Notify</a>
+            <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+        
+        <section>
+            <div class="section-1">Rankings</div>
+        </section>
+        
+        <aside id="sticky-social">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="google-plus.png" alt="Google+"></a></li>
+                <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="#"><img src="myspace.png" alt="MySpace"></a></li>
+                <li><a href="#"><img src="pinterest.png" alt="Pinterest"</a></li>
+                <li><a href="#"><img src="vk.png" alt="Vk"></a></li>
+                <li><a href="#"><img src="tumblr.png" alt="Tumblr"></a></li>
+                <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+            </ul>
+        </aside>
+        
+         <!-- Login Form -->
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="action_page.php">
+                
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Login Form">&times;</span>
+                    <img src="teacher.png" alt="Avatar" class="avatar" height="245px" width="245px">
+                </div>
+                
+                <div class="container">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+                
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked">Remember me
+                </div>
+                
+                <div class="container" style="background-color: #b30000">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="button" class="Signup" onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+                    <button type="button" class="Signup" onclick="document.getElementById('id04').style.display='block'">Sign In</button>
+                    <span class="psw"><button type="button" class="Send1" onclick="document.getElementById('id03').style.display='block'">Forgot password?</button></span>
+                </div>
+                
+            </form>
+        </div>
+        
+        <!-- Sign up form -->
+        <div id="id02" class="modal2">
+            <form class="modal-content2 animate" action="action_page.php">
+                <div class="container-close"><span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Sign Up Form">&times;</span></div>
+                <div class="container2">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+                    
+                    <label>Repeat Password</label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pass-repeat" required>
+                    
+                    <input type="checkbox" checked="checked">Remember Me
+                    <p>By creating an account you agree to our<a href=#> Terms & Privacy</a>.</p>
+                    
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+                        <button type="submit" class="signup">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Forgot password -->
+        <div id="id03" class="modal3">
+            <form class="modal-content3 animate" action="action_page.php">
+                <div class="container-close2"><span onclick="document.getElementById('id03').style.display='none'" class="close3" title="Close Password Recovery Form">&times;</span></div>
+                <div class="container3">
+                    <div class="descr" style="padding: ">
+                        <p>If you forget a password for your profile, you can entire a username and email then click button "Send a letter". Thereafter we send a letter in your email-account with special "Password Recovery Form".</p>
+                    </div>
+                    
+                    <label>Enter Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname2" id="username2" required>
+                    
+                    <label>Enter Email</label>
+                    <input type="text" placeholder="Enter Email" name="email2" id="email2" required>
+                    
+                    <div class="clearfix2">
+                        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn3">Cancel</button>
+                        <button type="button" class="Send" onclick="document.getElementById('id03').style.display='none'">Send a letter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Sign In Form -->
+        <div id="id04" class="modal4">
+            <form class="modal-content4 animate" action="action_page.php">
+                <div class="container-close4"><span onclick="document.getElementById('id04').style.display='none'" class="close4" title="Close Sign In Form">&times;</span></div>
+                <div class="container4">
+                    
+                    <a class="btn btn-block btn-social btn-google" id="signGoogle" style="margin-top: 15px;" href="https://accounts.google.com/Login/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in with Google</a>
+                    <a class="btn btn-block btn-social btn-facebook" id="signFacebook" href="https://www.facebook.com/login.php?login_attempt=1&lwv=110">Sign in with Facebook</a>
+                    <a class="btn btn-block btn-social btn-twitter" id="signTwitter" href="https://twitter.com/login">Sign in with Twitter</a>
+                    <a class="btn btn-block btn-social btn-vk" id="signVK" href="https://vk.com">Sign in with VK</a>
+                    
+                    <div class="clearfix3">
+                        <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn4">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Scroll to top button -->
+        <button onclick="topFunction()" id="TopBut" title="Go to top">↑</button>
+        
+        <!-- Bootstrap Include -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="bootstrap.js"></script>
+        
+        <script src="index.js" type="text/javascript"></script>
+        
+    </body>
+</html>
